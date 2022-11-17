@@ -1,0 +1,24 @@
+<div class="annotation-tools-container" >
+  <forge-button class="annotation-save-button" (click)="clear()">
+    <button type="button">
+        <span>reset</span>
+  </button>
+</forge-button>
+  <forge-button class="annotation-save-button" (click)="undo()">
+    <button type="button">
+        <span>Undo</span>
+  </button>
+</forge-button>
+   <forge-button class="annotation-save-button" (click)="handleSave()">
+        <button type="button">
+            <span>Send map changes</span>
+      </button>
+    </forge-button>
+    <forge-button-toggle-group value="Point" #buttongroup>
+        <forge-button-toggle value="Point" aria-label="annotation">Annotation</forge-button-toggle>
+        <forge-button-toggle value="LineString" aria-label="line">Line</forge-button-toggle>
+        <forge-button-toggle value="Polygon" aria-label="polygon">Polygon</forge-button-toggle>
+        <forge-button-toggle value="freehand" aria-label="sketch">Freehand</forge-button-toggle>
+      </forge-button-toggle-group>
+</div>
+

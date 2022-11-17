@@ -1,0 +1,15 @@
+<div id="map" class="map"></div>
+<div id="popup" class="ol-popup">
+    <a href="#" id="popup-closer" class="ol-popup-closer" (click)="closePopUp()"></a>
+    <div id="popup-content" class="annotation-text-input">
+        <forge-text-field>
+            <input type="text" id="annotation-text" [(ngModel)]="currentAnnotation"/>
+            <label for="annotation-text" slot="label">Annotation text</label>
+          </forge-text-field>
+          <forge-button class="annotation-text-save-button" (click)="handleSaveText()">
+            <button type="button">
+                <span>Save Text</span>
+          </button>
+        </forge-button>
+    </div>
+</div>

@@ -1,0 +1,10 @@
+.annotation-tools-container{
+    margin:10px;
+    float:right;
+    display: flex;
+    flex-direction: row;
+}
+
+.annotation-save-button{
+    margin-right: 44px;
+}

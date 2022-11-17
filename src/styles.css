@@ -1,1 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+@import url("../node_modules/@tylertech/forge/dist/forge.css");
+@import url("../node_modules/ol/ol.css");
+
+html,body{
+    height:100%;
+    overflow: hidden;
+}
